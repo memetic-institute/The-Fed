@@ -1,0 +1,1 @@
+{"version":3,"sources":["YouTubeAudio.module.scss"],"names":[],"mappings":"AAEA,0BACI,KAAM,CACN,MAAO,CACP,SAAU,CACV,UAAW","file":"1.66d48438.chunk.css","sourcesContent":["@import '../../variables';\n\n.root {\n    top: 0;\n    left: 0;\n    opacity: 0;\n    z-index: -2;\n}\n"]}
