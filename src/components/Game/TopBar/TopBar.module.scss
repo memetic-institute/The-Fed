@@ -1,0 +1,19 @@
+@import '../../../variables';
+
+.root {
+    ::-moz-selection {
+        background: $white;
+        color: $primary;
+        text-shadow: none;
+    }
+
+    ::selection {
+        background: $white;
+        color: $primary;
+        text-shadow: none;
+    }
+}
+
+.toggle {
+    z-index: 100;
+}

@@ -1,0 +1,6 @@
+@import '../../../variables';
+
+.root {
+    background: $gray-600 url('./federal-reserve.png') center bottom / cover no-repeat;
+    overflow: scroll;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+    <!-- Webpack will replace environment variables formatted like %PUBLIC_URL% during the build. -->
+
+    <head>
+        <meta charset="utf-8" />
+
+        <title>%REACT_APP_TITLE%</title>
+
+        <meta name="description" content="%REACT_APP_DESCRIPTION%" />
+
+        <!-- PWA Meta Tags -->
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="application-name" content="%REACT_APP_TITLE%" />
+        <meta name="apple-mobile-web-app-title" content="%REACT_APP_TITLE%" />
+        <meta name="theme-color" content="#%REACT_APP_THEME_COLOR%" />
+        <meta
+            name="msapplication-TileColor"
+            content="#%REACT_APP_THEME_COLOR%"
+        />
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="%REACT_APP_TITLE%" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="%REACT_APP_DESCRIPTION%" />
+        <meta property="og:url" content="%PUBLIC_URL%" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image" content="%PUBLIC_URL%/open-graph.png" />
+        <meta property="og:image:alt" content="%REACT_APP_TAGLINE%" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="%REACT_APP_TITLE%" />
+        <meta name="twitter:description" content="%REACT_APP_DESCRIPTION%" />
+        <meta name="twitter:image" content="%PUBLIC_URL%/open-graph.png" />
+        <meta name="twitter:image:alt" content="%REACT_APP_TAGLINE%" />
+
+        <!-- App Manifest -->
+        <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest" />
+
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="%PUBLIC_URL%/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="%PUBLIC_URL%/favicon-16x16.png"
+        />
+
+        <!-- Apple Icons -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="%PUBLIC_URL%/apple-touch-icon.png"
+        />
+        <link
+            rel="mask-icon"
+            href="%PUBLIC_URL%/safari-pinned-tab.svg"
+            color="#%REACT_APP_THEME_COLOR%"
+        />
+
+        <script type="text/javascript">
+            // Single Page Apps for GitHub Pages
+            // https://github.com/rafrex/spa-github-pages
+            // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+            // ----------------------------------------------------------------------
+            // This script checks to see if a redirect is present in the query string
+            // and converts it back into the correct url and adds it to the
+            // browser's history using window.history.replaceState(...),
+            // which won't cause the browser to attempt to load the new url.
+            // When the single page app is loaded further down in this file,
+            // the correct url will be waiting in the browser's history for
+            // the single page app to route accordingly.
+            (function(l) {
+                if (l.search) {
+                    var q = {};
+                    l.search
+                        .slice(1)
+                        .split('&')
+                        .forEach(function(v) {
+                            var a = v.split('=');
+                            q[a[0]] = a
+                                .slice(1)
+                                .join('=')
+                                .replace(/~and~/g, '&');
+                        });
+                    if (q.p !== undefined)
+                        window.history.replaceState(
+                            null,
+                            null,
+                            l.pathname.slice(0, -1) +
+                                (q.p || '') +
+                                (q.q ? '?' + q.q : '') +
+                                l.hash
+                        );
+                }
+            })(window.location);
+        </script>
+    </head>
+
+    <body class="h-100">
+        <noscript>Please enable JavaScript to play %REACT_APP_TITLE%.</noscript>
+        <div id="root" class="h-100"></div>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+{
+    "name": "withAnalytics",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./withAnalytics.js"
+}

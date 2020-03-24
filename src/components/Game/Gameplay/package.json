@@ -1,0 +1,6 @@
+{
+    "name": "Gameplay",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./Gameplay.js"
+}

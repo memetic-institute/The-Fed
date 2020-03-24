@@ -1,0 +1,6 @@
+{
+  "name": "WaveBG",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./WaveBG.js"
+}

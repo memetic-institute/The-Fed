@@ -1,0 +1,6 @@
+{
+    "name": "PrintButton",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./PrintButton.js"
+}

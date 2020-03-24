@@ -1,0 +1,9 @@
+@import '../../../../../variables';
+
+.img {
+    width: 4em;
+    height: 4em;
+    background-color: $white;
+    background-position: center center;
+    background-size: cover;
+}

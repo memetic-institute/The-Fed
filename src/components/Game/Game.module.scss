@@ -1,0 +1,13 @@
+@import '../../variables';
+
+.root {
+    padding-bottom: 35px;
+}
+
+.active {
+    padding-top: 66px;
+}
+
+.shade {
+    background: linear-gradient(0deg, rgba($black, 0.5) 0%, rgba($black, 0) 100%);
+}

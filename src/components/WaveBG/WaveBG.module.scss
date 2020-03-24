@@ -1,0 +1,19 @@
+@import '../../variables';
+
+.root {
+    background: $body-bg url('./bank-note-pattern.svg') 0 0/75pt repeat;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: slideBG 5s linear infinite;
+}
+
+@keyframes slideBG {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100px 0;
+    }
+}

@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+    - stable
+cache:
+    directories:
+        - node_modules
+install:
+    - npm install -g codecov
+    - yarn install
+    - 'curl -H "Cache-Control: no-cache" https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | sudo bash'
+script:
+    - yarn build
+    - fossa init
+    - fossa analyze
+    # - yarn test --coverage
+    # - codecov
+after_success:
+    - fossa test
+deploy:
+    provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    keep-history: true
+    local-dir: build
+    on:
+        branch: master
+        node: stable

@@ -1,0 +1,29 @@
+@import '../../../../../variables';
+
+.bankNote {
+    height: 100px;
+    transition: transform 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@include media-breakpoint-up(sm) {
+    .bankNote {
+        height: 150px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .bankNote {
+        height: 100px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .bankNote {
+        height: 150px;
+    }
+}
+
+.bankNoteShrink {
+    transform: scale(0.75);
+    transform-origin: center center;
+}

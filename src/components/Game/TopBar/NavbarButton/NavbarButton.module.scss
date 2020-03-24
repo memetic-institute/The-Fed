@@ -1,0 +1,14 @@
+@import '../../../../variables';
+
+.root {
+    color: $white !important;
+    cursor: pointer;
+
+    @include hover {
+        color: $gray-300 !important;
+    }
+
+    &:focus {
+        color: $yellow !important;
+    }
+}

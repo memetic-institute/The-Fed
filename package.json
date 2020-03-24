@@ -1,0 +1,98 @@
+{
+    "name": "the-fed",
+    "version": "1.0.0",
+    "description": "A simple game about central banking",
+    "homepage": "https://thefed.app",
+    "repository": "github:memetic-institute/The-Fed.git",
+    "author": "IMRD <hi@memetic.institute> (https://memetic.institute)",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "predeploy": "react-scripts build",
+        "deploy": "gh-pages -d build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "lint-staged": {
+        "ignore": [
+            "package.json",
+            "**/**/*.test.js"
+        ],
+        "linters": {
+            "*.{js,jsx}": [
+                "prettier --write",
+                "eslint --fix --rule 'import/no-extraneous-dependencies: off'",
+                "git add --force"
+            ],
+            "*.{json,md}": [
+                "prettier --write",
+                "git add --force"
+            ],
+            "*.{css,less,scss,sass,sss,styl}": [
+                "stylelint --fix",
+                "git add --force"
+            ]
+        }
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.27",
+        "@fortawesome/free-brands-svg-icons": "^5.12.1",
+        "@fortawesome/pro-regular-svg-icons": "^5.12.1",
+        "@fortawesome/pro-solid-svg-icons": "^5.12.1",
+        "@fortawesome/react-fontawesome": "^0.1.9",
+        "bootstrap": "^4.4.1",
+        "classnames": "^2.2.6",
+        "connected-react-router": "^6.8.0",
+        "gh-pages": "^2.2.0",
+        "history": "^4.10.1",
+        "node-sass": "^4.13.1",
+        "react": "^16.13.1",
+        "react-bootstrap": "^1.0.0-beta.17",
+        "react-countup": "^4.3.3",
+        "react-device-detect": "^1.11.14",
+        "react-dom": "^16.13.1",
+        "react-ga": "^2.7.0",
+        "react-helmet": "^5.2.1",
+        "react-loadable": "^5.5.0",
+        "react-player": "^1.15.2",
+        "react-redux": "^7.2.0",
+        "react-router-dom": "^5.1.2",
+        "react-scripts": "3.4.1",
+        "react-sizeme": "^2.6.12",
+        "redux": "^4.0.5",
+        "redux-logger": "^3.0.6",
+        "redux-persist": "^5.10.0",
+        "redux-thunk": "^2.3.0",
+        "typeface-vt323": "^0.0.72",
+        "uuid": "^3.3.2"
+    },
+    "devDependencies": {
+        "eslint-config-airbnb": "^18.1.0",
+        "eslint-config-prettier": "^6.10.1",
+        "eslint-plugin-css-modules": "^2.11.0",
+        "eslint-plugin-flowtype": "^4.6.0",
+        "eslint-plugin-prettier": "^3.1.2",
+        "prettier": "^2.0.1",
+        "prop-types": "^15.7.2",
+        "stylelint": "^13.2.1",
+        "stylelint-config-standard": "^20.0.0",
+        "stylelint-order": "^4.0.0"
+    }
+}

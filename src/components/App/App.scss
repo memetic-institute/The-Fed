@@ -1,0 +1,53 @@
+/* eslint-disable css-modules/no-unused-class */
+
+// Import Variables
+@import '../../variables';
+
+// Import Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Text selection
+::-moz-selection {
+    background: $primary;
+    color: $white;
+    text-shadow: none;
+}
+
+::selection {
+    background: $primary;
+    color: $white;
+    text-shadow: none;
+}
+
+// Headers
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h4,
+.h5,
+h6,
+.h6 {
+    font-family: $font-family-monospace;
+    font-weight: 600;
+}
+
+// No-JavaScript notice
+noscript {
+    display: block;
+    margin: 2em auto;
+    padding: 1em;
+    font: 100 2em sans-serif;
+    text-align: center;
+}
+
+// Main app-level cards
+.main-card {
+    margin: auto;
+    max-width: 600px;
+    text-align: center;
+}
