@@ -11,6 +11,7 @@ import Logo from '../Logo';
 import Intro from './Intro';
 import Application from './Application';
 import Welcome from './Welcome';
+import Footer from '../Footer';
 import styles from './Start.module.scss';
 
 const Start = ({ active }) => {
@@ -36,7 +37,10 @@ const Start = ({ active }) => {
     }
 
     return (
-        <>
+        <Container
+            fluid
+            className={classNames('d-flex', 'flex-column', 'h-100', 'p-0')}
+        >
             <WaveBG />
             {!isMobile && (
                 <YouTubeAudio
@@ -45,7 +49,7 @@ const Start = ({ active }) => {
                     loop={false}
                 />
             )}
-            <Container>
+            <Container className={classNames('flex-grow-1')}>
                 <div className={classNames(styles.logo, 'mx-auto', 'py-5')}>
                     <Logo />
                 </div>
@@ -53,16 +57,17 @@ const Start = ({ active }) => {
                     <Stage />
                 </Card>
             </Container>
-        </>
+            <Footer />
+        </Container>
     );
 };
 
 Start.propTypes = {
-    active: bool.isRequired
+    active: bool.isRequired,
 };
 
 const mapStateToProps = ({ game: { active } }) => ({
-    active
+    active,
 });
 
 export default connect(mapStateToProps)(Start);

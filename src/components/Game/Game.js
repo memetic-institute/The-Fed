@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import TopBar from './TopBar';
 import Gameplay from './Gameplay';
-import BottomBar from './BottomBar';
+import Footer from '../Footer';
 import styles from './Game.module.scss';
 import YouTubeAudio from '../YouTubeAudio';
 
@@ -20,14 +20,6 @@ const Game = ({ active }) => {
                 'h-100'
             )}
         >
-            <div
-                className={classNames(
-                    styles.shade,
-                    'h-100',
-                    'w-100',
-                    'position-fixed'
-                )}
-            />
             <TopBar />
             <div
                 role="main"
@@ -35,7 +27,7 @@ const Game = ({ active }) => {
             >
                 <Gameplay />
             </div>
-            <BottomBar />
+            <Footer />
             {!isMobile && (
                 <YouTubeAudio url="https://www.youtube.com/watch?v=mm32b_-sOM0" />
             )}
@@ -44,11 +36,11 @@ const Game = ({ active }) => {
 };
 
 Game.propTypes = {
-    active: bool.isRequired
+    active: bool.isRequired,
 };
 
 const mapStateToProps = ({ game: { active } }) => ({
-    active
+    active,
 });
 
 export default connect(mapStateToProps)(Game);

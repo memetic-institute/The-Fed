@@ -3,4 +3,14 @@
 .root {
     background: $gray-600 url('./federal-reserve.png') center bottom / cover no-repeat;
     overflow: scroll;
+    z-index: 1;
+}
+
+.shade {
+    background: linear-gradient(0deg, rgba($black, 0.5) 0%, rgba($black, 0) 100%);
+    z-index: 2;
+}
+
+.container {
+    z-index: 3;
 }

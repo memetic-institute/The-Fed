@@ -19,7 +19,7 @@ const Gameplay = ({
     showModal,
     tutorial,
     handleTimer,
-    handleRenderModal
+    handleRenderModal,
 }) => {
     const [openModalIntro, setOpenModalIntro] = useState(
         tutorial && money === 0 && money === totalMoney
@@ -27,7 +27,7 @@ const Gameplay = ({
     useEffect(() => {
         if (openModalIntro)
             handleRenderModal({
-                render: closeModal => (
+                render: (closeModal) => (
                     <Help
                         isGameStart
                         handleCloseModal={() => {
@@ -36,7 +36,7 @@ const Gameplay = ({
                         }}
                     />
                 ),
-                size: 'lg'
+                size: 'lg',
             });
         if (!showModal) {
             const gameIncrement = setInterval(handleTimer, 1000);
@@ -54,7 +54,15 @@ const Gameplay = ({
                 'text-white'
             )}
         >
-            <Container fluid className={h100}>
+            <div
+                className={classNames(
+                    styles.shade,
+                    'h-100',
+                    'w-100',
+                    'position-fixed'
+                )}
+            />
+            <Container fluid className={classNames(styles.container, h100, 'position-relative')}>
                 <Row className={h100}>
                     <Col xs={{ span: 12, order: 2 }} md={{ span: 4, order: 1 }}>
                         <Store />
@@ -77,26 +85,23 @@ Gameplay.propTypes = {
     showModal: bool.isRequired,
     tutorial: bool.isRequired,
     handleTimer: func.isRequired,
-    handleRenderModal: func.isRequired
+    handleRenderModal: func.isRequired,
 };
 
 const mapStateToProps = ({
     game: { money, totalMoney },
     modal: { show },
-    preferences: { tutorial }
+    preferences: { tutorial },
 }) => ({
     showModal: show,
     money,
     totalMoney,
-    tutorial
+    tutorial,
 });
 
 const mapDispatchToProps = {
     handleTimer: incrementTimer,
-    handleRenderModal: renderModal
+    handleRenderModal: renderModal,
 };
 
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(Gameplay);
+export default connect(mapStateToProps, mapDispatchToProps)(Gameplay);
