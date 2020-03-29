@@ -1,0 +1,1 @@
+{"version":3,"sources":["NotFound.module.scss"],"names":[],"mappings":"AAEA,sBACI,oBAAqB","file":"8.e2330c6a.chunk.css","sourcesContent":["@import '../../variables';\n\n.link {\n    text-decoration: none;\n}\n"]}

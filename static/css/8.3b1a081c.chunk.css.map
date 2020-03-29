@@ -1,1 +1,0 @@
-{"version":3,"sources":["Start.module.scss"],"names":[],"mappings":"AAEA,mBACI,eAAgB","file":"8.3b1a081c.chunk.css","sourcesContent":["@import '../../variables';\n\n.logo {\n    max-width: 500px;\n}\n"]}

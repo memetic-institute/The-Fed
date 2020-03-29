@@ -1,79 +1,83 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "df507e2b0c24d4e7aec9170aeecc548d",
+    "revision": "9c9b52b46ea1fe61aa63b326c35bf49c",
     "url": "https://thefed.app/index.html"
   },
   {
-    "revision": "e3b71b3f96803496553f",
-    "url": "https://thefed.app/static/css/1.66d48438.chunk.css"
+    "revision": "170b338bfd489c39c5f5",
+    "url": "https://thefed.app/static/css/2.66d48438.chunk.css"
   },
   {
-    "revision": "71892ceddb935e491ee1",
-    "url": "https://thefed.app/static/css/4.7ba9d008.chunk.css"
+    "revision": "8f19036c25601b1ac631",
+    "url": "https://thefed.app/static/css/5.7ba9d008.chunk.css"
   },
   {
-    "revision": "4b25f3c3b9827f696b16",
-    "url": "https://thefed.app/static/css/6.612b79ea.chunk.css"
+    "revision": "85f804f7390487f88ff0",
+    "url": "https://thefed.app/static/css/7.13f182e4.chunk.css"
   },
   {
-    "revision": "72da117d21afe4f33e55",
-    "url": "https://thefed.app/static/css/7.02d74b59.chunk.css"
+    "revision": "b1fb466dcbbef8d94af7",
+    "url": "https://thefed.app/static/css/8.e2330c6a.chunk.css"
   },
   {
-    "revision": "01f3e0a42f42e234c8cb",
-    "url": "https://thefed.app/static/css/8.3b1a081c.chunk.css"
+    "revision": "4cb491e65e609697b1fe",
+    "url": "https://thefed.app/static/css/9.3b1a081c.chunk.css"
   },
   {
-    "revision": "587e58eca0fa6be051d0",
+    "revision": "3d4388e63146b16808ea",
     "url": "https://thefed.app/static/css/main.47039ba7.chunk.css"
   },
   {
-    "revision": "b5d9f2967dbce450f53a",
-    "url": "https://thefed.app/static/js/0.4c17d97b.chunk.js"
+    "revision": "eb55fcbfce8336b82b04",
+    "url": "https://thefed.app/static/js/0.9b2beb30.chunk.js"
+  },
+  {
+    "revision": "df4a69ad69962d2971b2",
+    "url": "https://thefed.app/static/js/1.47dde85a.chunk.js"
   },
   {
     "revision": "573c03b54bf739ab0b9029188d0efb17",
-    "url": "https://thefed.app/static/js/0.4c17d97b.chunk.js.LICENSE.txt"
+    "url": "https://thefed.app/static/js/1.47dde85a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e3b71b3f96803496553f",
-    "url": "https://thefed.app/static/js/1.f0604acb.chunk.js"
+    "revision": "170b338bfd489c39c5f5",
+    "url": "https://thefed.app/static/js/2.71541e38.chunk.js"
   },
   {
-    "revision": "71892ceddb935e491ee1",
-    "url": "https://thefed.app/static/js/4.5a1c4b6d.chunk.js"
+    "revision": "8f19036c25601b1ac631",
+    "url": "https://thefed.app/static/js/5.2627a98a.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "https://thefed.app/static/js/4.5a1c4b6d.chunk.js.LICENSE.txt"
+    "url": "https://thefed.app/static/js/5.2627a98a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "aaf6c308e8092d8b222e",
-    "url": "https://thefed.app/static/js/5.69d3ede1.chunk.js"
+    "revision": "4af5ff36342badb8dfa6",
+    "url": "https://thefed.app/static/js/6.afb65924.chunk.js"
   },
   {
     "revision": "000d6c36287224a7ff48f88e64636454",
-    "url": "https://thefed.app/static/js/5.69d3ede1.chunk.js.LICENSE.txt"
+    "url": "https://thefed.app/static/js/6.afb65924.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4b25f3c3b9827f696b16",
-    "url": "https://thefed.app/static/js/6.ff6a1ca2.chunk.js"
+    "revision": "85f804f7390487f88ff0",
+    "url": "https://thefed.app/static/js/7.9771e972.chunk.js"
   },
   {
-    "revision": "72da117d21afe4f33e55",
-    "url": "https://thefed.app/static/js/7.1d285291.chunk.js"
+    "revision": "b1fb466dcbbef8d94af7",
+    "url": "https://thefed.app/static/js/8.385084f8.chunk.js"
   },
   {
-    "revision": "01f3e0a42f42e234c8cb",
-    "url": "https://thefed.app/static/js/8.9fc80a5b.chunk.js"
+    "revision": "4cb491e65e609697b1fe",
+    "url": "https://thefed.app/static/js/9.fd37ccdc.chunk.js"
   },
   {
-    "revision": "587e58eca0fa6be051d0",
-    "url": "https://thefed.app/static/js/main.72e4d03f.chunk.js"
+    "revision": "3d4388e63146b16808ea",
+    "url": "https://thefed.app/static/js/main.8fac0c02.chunk.js"
   },
   {
-    "revision": "855566296ee818328daa",
-    "url": "https://thefed.app/static/js/runtime-main.454087e5.js"
+    "revision": "76d27b336dda523a254c",
+    "url": "https://thefed.app/static/js/runtime-main.e47e21b4.js"
   },
   {
     "revision": "f7d3bce2a2770ca4041e33e14e87c7ab",
@@ -106,10 +110,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e280302d30f742e9202442a032c22907",
     "url": "https://thefed.app/static/media/federal-reserve.e280302d.png"
-  },
-  {
-    "revision": "a35fbb122c9ed67800089f681df25030",
-    "url": "https://thefed.app/static/media/imrd.a35fbb12.svg"
   },
   {
     "revision": "329c318e8a658935177486b69bc41d03",

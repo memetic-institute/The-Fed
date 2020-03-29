@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://thefed.app/precache-manifest.36923f5d994527f5f52f189f720d1598.js"
+  "https://thefed.app/precache-manifest.f19cdf625df1200772f0976b45964e5a.js"
 );
 
 self.addEventListener('message', (event) => {
