@@ -62,7 +62,7 @@
         "connected-react-router": "^6.8.0",
         "gh-pages": "^2.2.0",
         "history": "^4.10.1",
-        "node-sass": "^4.13.1",
+        "node-sass": "^7.0.0",
         "react": "^16.13.1",
         "react-bootstrap": "^1.0.0-beta.17",
         "react-countup": "^4.3.3",
